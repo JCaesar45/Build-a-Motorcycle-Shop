@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MotoGallery | Premium Motorcycle Showroom</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="hero-header">
+      <div class="header-content">
+        <h1 class="brand-title">MotoGallery</h1>
+        <p class="brand-subtitle">Curated engineering. Uncompromising performance.</p>
+      </div>
+    </header>
+
+    <main class="showroom-main">
+      <div class="controls-bar">
+        <div class="search-wrapper">
+          <input type="text" id="filter-input" placeholder="Search by model, manufacturer, or category..." autocomplete="off" />
+        </div>
+        <div class="results-indicator">
+          <span id="results-number">0</span> <span class="results-label">Machines Available</span>
+        </div>
+      </div>
+
+      <div id="motorcycle-grid" class="motorcycle-grid"></div>
+      
+      <div id="no-results" class="no-results hidden">
+        <p>No motorcycles found matching your criteria.</p>
+      </div>
+    </main>
+
+    <footer class="luxury-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 MotoGallery. Ride with passion, choose with confidence.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="./index.ts" type="module"></script>
+</body>
+</html>
